@@ -14,5 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_rpm_repository:
+  - name: "https://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm"
+    state: "latest"
+
 _yum:
-  - { state: "latest", name: "firefox" }
+  - { state: "latest", name: "HandBrake-cli" }
+  - { state: "latest", name: "HandBrake-gui" }

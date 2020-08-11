@@ -14,5 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_rpm_repository:
+  - name: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm"
+    state: "latest"
+  - name: "https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm"
+    state: "latest"
+  - name: "https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm"
+    state: "latest"
+
 _yum:
-  - { state: "latest", name: "firefox" }
+  - { state: "latest", name: "HandBrake" }
+  - { state: "latest", name: "HandBrake-gui" }
