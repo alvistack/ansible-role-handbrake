@@ -14,5 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_zypper_repository:
+  - name: "packman-x86_64"
+    repo: "http://packman.inode.at/suse/openSUSE_Leap_15.2/"
+    state: "present"
+
 _zypper:
-  - { state: "latest", name: "MozillaFirefox" }
+  - { state: "latest", name: "https://ftp.lysator.liu.se/pub/opensuse/distribution/leap/15.2/repo/oss/x86_64/libdav1d3-0.5.2-lp152.1.4.x86_64.rpm" }
+  - { state: "latest", name: "handbrake-cli" }
+  - { state: "latest", name: "handbrake-gtk" }
+  - { state: "latest", name: "handbrake-gtk-lang" }
