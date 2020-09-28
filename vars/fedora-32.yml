@@ -14,5 +14,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_rpm_key:
+  - key: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x7BDA98EF593050A34B1697ABA0EE9D83100BCD92"
+    fingerprint: "7BDA98EF593050A34B1697ABA0EE9D83100BCD92"
+    state: "present"
+  - key: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xFE5A9393CB6E271B5A90CC1B0D9A76996DC1BE18"
+    fingerprint: "FE5A9393CB6E271B5A90CC1B0D9A76996DC1BE18"
+    state: "present"
+
+_rpm_repository:
+  - name: "https://rpmfind.net/linux/rpmfusion/free/fedora/rpmfusion-free-release-32.noarch.rpm"
+    state: "latest"
+  - name: "https://rpmfind.net/linux/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-32.noarch.rpm"
+    state: "latest"
+
 _yum:
-  - { state: "latest", name: "firefox" }
+  - { state: "latest", name: "handbrake" }
+  - { state: "latest", name: "handbrake-gui" }
