@@ -14,5 +14,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_rpm_key:
+  - key: "https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-8"
+    fingerprint: "94E279EB8D8F25B21810ADF121EA45AB2F86D6A1"
+    state: "present"
+  - key: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x837935CD19E123AA7F8A8E69979F0C69158B3811"
+    fingerprint: "837935CD19E123AA7F8A8E69979F0C69158B3811"
+    state: "present"
+  - key: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xCF9FD59F61D6612146CDAC8E14B6792DBDDA8475"
+    fingerprint: "CF9FD59F61D6612146CDAC8E14B6792DBDDA8475"
+    state: "present"
+
+_rpm_repository:
+  - name: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm"
+    state: "latest"
+  - name: "https://rpmfind.net/linux/rpmfusion/free/el/rpmfusion-free-release-8.noarch.rpm"
+    state: "latest"
+  - name: "https://rpmfind.net/linux/rpmfusion/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm"
+    state: "latest"
+
 _yum:
-  - { state: "latest", name: "firefox" }
+  - { state: "latest", name: "handbrake" }
+  - { state: "latest", name: "handbrake-gui" }
