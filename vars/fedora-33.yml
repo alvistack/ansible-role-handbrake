@@ -15,17 +15,17 @@
 # limitations under the License.
 
 _rpm_key:
-  - key: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x7BDA98EF593050A34B1697ABA0EE9D83100BCD92"
-    fingerprint: "7BDA98EF593050A34B1697ABA0EE9D83100BCD92"
+  - key: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xE9A491A3DE247814E7E067EAE06F8ECDD651FF2E"
+    fingerprint: "E9A491A3DE247814E7E067EAE06F8ECDD651FF2E"
     state: "present"
-  - key: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xFE5A9393CB6E271B5A90CC1B0D9A76996DC1BE18"
-    fingerprint: "FE5A9393CB6E271B5A90CC1B0D9A76996DC1BE18"
+  - key: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x79BDB88F9BBF73910FD4095B6A2AF96194843C65"
+    fingerprint: "79BDB88F9BBF73910FD4095B6A2AF96194843C65"
     state: "present"
 
 _rpm_repository:
-  - name: "https://rpmfind.net/linux/rpmfusion/free/fedora/rpmfusion-free-release-32.noarch.rpm"
+  - name: "https://rpmfind.net/linux/rpmfusion/free/fedora/rpmfusion-free-release-33.noarch.rpm"
     state: "latest"
-  - name: "https://rpmfind.net/linux/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-32.noarch.rpm"
+  - name: "https://rpmfind.net/linux/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-33.noarch.rpm"
     state: "latest"
 
 _yum:
