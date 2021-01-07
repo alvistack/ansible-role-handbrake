@@ -16,7 +16,7 @@
 
 _zypper_repository:
   - name: "packman"
-    repo: "http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_15.2"
+    repo: "http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed"
     state: "present"
 
 _zypper:
