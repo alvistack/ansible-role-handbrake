@@ -25,13 +25,16 @@ _rpm_key:
     fingerprint: "CF9FD59F61D6612146CDAC8E14B6792DBDDA8475"
     state: "present"
 
-_rpm_repository:
-  - name: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm"
-    state: "latest"
-  - name: "https://rpmfind.net/linux/rpmfusion/free/el/rpmfusion-free-release-8.noarch.rpm"
-    state: "latest"
-  - name: "https://rpmfind.net/linux/rpmfusion/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm"
-    state: "latest"
+_rpm_download:
+  - url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm"
+    dest: "/var/cache/ansible/74bb98b514f1571d15d01b63979cc530811431c8d890dd29edaaca95ca475dd8/epel-release-latest-8.noarch.rpm"
+    checksum: "sha256:74bb98b514f1571d15d01b63979cc530811431c8d890dd29edaaca95ca475dd8"
+  - url: "https://rpmfind.net/linux/rpmfusion/free/el/rpmfusion-free-release-8.noarch.rpm"
+    dest: "/var/cache/ansible/4077577b4b7ff1314da2489d7a82e6af938ac4c106af305018e470adb4e9bf16/rpmfusion-free-release-8.noarch.rpm"
+    checksum: "sha256:4077577b4b7ff1314da2489d7a82e6af938ac4c106af305018e470adb4e9bf16"
+  - url: "https://rpmfind.net/linux/rpmfusion/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm"
+    dest: "/var/cache/ansible/cb8af4d502c95441e7d9e331e5c4902a88afbc4c55e3c801d5e3df2d0a907e81/rpmfusion-nonfree-release-8.noarch.rpm"
+    checksum: "sha256:cb8af4d502c95441e7d9e331e5c4902a88afbc4c55e3c801d5e3df2d0a907e81"
 
 _yum:
   - { state: "latest", name: "handbrake" }

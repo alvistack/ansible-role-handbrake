@@ -22,11 +22,13 @@ _rpm_key:
     fingerprint: "79BDB88F9BBF73910FD4095B6A2AF96194843C65"
     state: "present"
 
-_rpm_repository:
-  - name: "https://rpmfind.net/linux/rpmfusion/free/fedora/rpmfusion-free-release-33.noarch.rpm"
-    state: "latest"
-  - name: "https://rpmfind.net/linux/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-33.noarch.rpm"
-    state: "latest"
+_rpm_download:
+  - url: "https://rpmfind.net/linux/rpmfusion/free/fedora/rpmfusion-free-release-33.noarch.rpm"
+    dest: "/var/cache/ansible/0ea6e301b30fdacd4f747b40ce674ef90effac142391abee174ce8b3183855a9/rpmfusion-free-release-33.noarch.rpm"
+    checksum: "sha256:0ea6e301b30fdacd4f747b40ce674ef90effac142391abee174ce8b3183855a9"
+  - url: "https://rpmfind.net/linux/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-33.noarch.rpm"
+    dest: "/var/cache/ansible/23354574e0d38232822bc28615b636e0a605c2ed0b6f6a93a7f9aed25a3e5292/rpmfusion-nonfree-release-33.noarch.rpm"
+    checksum: "sha256:23354574e0d38232822bc28615b636e0a605c2ed0b6f6a93a7f9aed25a3e5292"
 
 _yum:
   - { state: "latest", name: "handbrake" }
