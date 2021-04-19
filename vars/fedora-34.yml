@@ -1,0 +1,35 @@
+---
+
+# (c) Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+_rpm_key:
+  - key: "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xE9A491A3DE247814E7E067EAE06F8ECDD651FF2E"
+    fingerprint: "E9A491A3DE247814E7E067EAE06F8ECDD651FF2E"
+    state: "present"
+  - key: "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x79BDB88F9BBF73910FD4095B6A2AF96194843C65"
+    fingerprint: "79BDB88F9BBF73910FD4095B6A2AF96194843C65"
+    state: "present"
+
+_rpm_download:
+  - url: "http://rpmfind.net/linux/rpmfusion/free/fedora/rpmfusion-free-release-33.noarch.rpm"
+    dest: "/var/cache/ansible/0ea6e301b30fdacd4f747b40ce674ef90effac142391abee174ce8b3183855a9/rpmfusion-free-release-33.noarch.rpm"
+    sha256sum: "0ea6e301b30fdacd4f747b40ce674ef90effac142391abee174ce8b3183855a9"
+  - url: "http://rpmfind.net/linux/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-33.noarch.rpm"
+    dest: "/var/cache/ansible/23354574e0d38232822bc28615b636e0a605c2ed0b6f6a93a7f9aed25a3e5292/rpmfusion-nonfree-release-33.noarch.rpm"
+    sha256sum: "23354574e0d38232822bc28615b636e0a605c2ed0b6f6a93a7f9aed25a3e5292"
+
+_yum:
+  - { state: "latest", name: "handbrake" }
+  - { state: "latest", name: "handbrake-gui" }
