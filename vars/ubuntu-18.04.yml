@@ -14,14 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_apt_key:
-  - url: "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x43D3A9F60C58A7169778E6FB8771ADB0816950D8"
-    id: "43D3A9F60C58A7169778E6FB8771ADB0816950D8"
-    state: "present"
+_apt_key: []
 
-_apt_repository:
-  - repo: "deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu bionic main"
-    state: "present"
+_apt_repository: []
 
 _apt:
   - { state: "latest", name: "handbrake" }
