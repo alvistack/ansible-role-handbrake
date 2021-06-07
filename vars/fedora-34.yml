@@ -24,10 +24,10 @@ _rpm_key:
 
 _rpm_download:
   - url: "http://rpmfind.net/linux/rpmfusion/free/fedora/rpmfusion-free-release-34.noarch.rpm"
-    dest: "/tmp/8b3fc52216c62cdd6267a8b195e46ad54088623cc07fe13b87b45d5c96884bf6/rpmfusion-free-release-34.noarch.rpm"
+    dest: "/var/cache/ansible/8b3fc52216c62cdd6267a8b195e46ad54088623cc07fe13b87b45d5c96884bf6/rpmfusion-free-release-34.noarch.rpm"
     checksum: "8b3fc52216c62cdd6267a8b195e46ad54088623cc07fe13b87b45d5c96884bf6"
   - url: "http://rpmfind.net/linux/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-34.noarch.rpm"
-    dest: "/tmp/ae1347553c34bac1f514f980d72b21f662b969380e16f9e74075a9587e1dc4a1/rpmfusion-nonfree-release-34.noarch.rpm"
+    dest: "/var/cache/ansible/ae1347553c34bac1f514f980d72b21f662b969380e16f9e74075a9587e1dc4a1/rpmfusion-nonfree-release-34.noarch.rpm"
     checksum: "ae1347553c34bac1f514f980d72b21f662b969380e16f9e74075a9587e1dc4a1"
 
 _yum:
