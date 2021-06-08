@@ -27,13 +27,13 @@ _rpm_key:
 
 _rpm_download:
   - url: "http://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm"
-    dest: "/tmp/74bb98b514f1571d15d01b63979cc530811431c8d890dd29edaaca95ca475dd8/epel-release-latest-8.noarch.rpm"
+    dest: "/var/cache/ansible/74bb98b514f1571d15d01b63979cc530811431c8d890dd29edaaca95ca475dd8/epel-release-latest-8.noarch.rpm"
     checksum: "74bb98b514f1571d15d01b63979cc530811431c8d890dd29edaaca95ca475dd8"
   - url: "http://rpmfind.net/linux/rpmfusion/free/el/rpmfusion-free-release-8.noarch.rpm"
-    dest: "/tmp/4077577b4b7ff1314da2489d7a82e6af938ac4c106af305018e470adb4e9bf16/rpmfusion-free-release-8.noarch.rpm"
+    dest: "/var/cache/ansible/4077577b4b7ff1314da2489d7a82e6af938ac4c106af305018e470adb4e9bf16/rpmfusion-free-release-8.noarch.rpm"
     checksum: "4077577b4b7ff1314da2489d7a82e6af938ac4c106af305018e470adb4e9bf16"
   - url: "http://rpmfind.net/linux/rpmfusion/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm"
-    dest: "/tmp/cb8af4d502c95441e7d9e331e5c4902a88afbc4c55e3c801d5e3df2d0a907e81/rpmfusion-nonfree-release-8.noarch.rpm"
+    dest: "/var/cache/ansible/cb8af4d502c95441e7d9e331e5c4902a88afbc4c55e3c801d5e3df2d0a907e81/rpmfusion-nonfree-release-8.noarch.rpm"
     checksum: "cb8af4d502c95441e7d9e331e5c4902a88afbc4c55e3c801d5e3df2d0a907e81"
 
 _yum:
