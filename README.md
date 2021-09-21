@@ -1,5 +1,7 @@
 # Ansible Role for HandBrake
 
+<img src="/alvistack.svg" width="75" alt="AlviStack">
+
 [![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-handbrake/master)](https://gitlab.com/alvistack/ansible-role-handbrake/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-handbrake.svg)](https://github.com/alvistack/ansible-role-handbrake/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-handbrake.svg)](https://github.com/alvistack/ansible-role-handbrake/blob/master/LICENSE)
