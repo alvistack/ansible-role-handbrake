@@ -22,10 +22,10 @@ _apt_key:
 
 _apt_repository:
   - filename: "savoury1"
-    repo: "deb http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu hirsute main"
+    repo: "deb http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu jammy main"
     state: "present"
   - filename: "savoury1"
-    repo: "deb http://ppa.launchpad.net/savoury1/handbrake/ubuntu hirsute main"
+    repo: "deb http://ppa.launchpad.net/savoury1/handbrake/ubuntu jammy main"
     state: "present"
 
 _apt:
