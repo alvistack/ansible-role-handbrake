@@ -24,11 +24,11 @@ _rpm_key:
 
 _rpm_download:
   - url: "http://rpmfind.net/linux/rpmfusion/free/fedora/rpmfusion-free-release-36.noarch.rpm"
-    dest: "/var/cache/ansible/964b56abe3bacb219ca05452c05f87d2dcc4b8d9652312f632717b055a5b3f3d/rpmfusion-free-release-36.noarch.rpm"
-    checksum: "964b56abe3bacb219ca05452c05f87d2dcc4b8d9652312f632717b055a5b3f3d"
+    dest: "/var/cache/ansible/d69cb6cc926b98cac08e2f5a76119ddfa90e975efe1aa970093d4c32de9fe4c3/rpmfusion-free-release-36.noarch.rpm"
+    checksum: "d69cb6cc926b98cac08e2f5a76119ddfa90e975efe1aa970093d4c32de9fe4c3"
   - url: "http://rpmfind.net/linux/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-36.noarch.rpm"
-    dest: "/var/cache/ansible/5b872443bc70de76750705fe54c0d43aab1302ecf1bbf85a58e5fbaec3d50e20/rpmfusion-nonfree-release-36.noarch.rpm"
-    checksum: "5b872443bc70de76750705fe54c0d43aab1302ecf1bbf85a58e5fbaec3d50e20"
+    dest: "/var/cache/ansible/97a8714ec7c6466f9686324429dab5fd15ea002e5760b296e5000b2b3a6eafec/rpmfusion-nonfree-release-36.noarch.rpm"
+    checksum: "97a8714ec7c6466f9686324429dab5fd15ea002e5760b296e5000b2b3a6eafec"
 
 _yum:
   - { state: "latest", name: "handbrake" }
