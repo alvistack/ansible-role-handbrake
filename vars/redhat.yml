@@ -24,11 +24,11 @@ _rpm_key:
 
 _rpm_download:
   - url: "http://rpmfind.net/linux/rpmfusion/free/fedora/rpmfusion-free-release-rawhide.noarch.rpm"
-    dest: "/var/cache/ansible/8895fa67175b85c44777208e2ab6685cbc9764c5bb6d5e09555239523c8b25c4/rpmfusion-free-release-rawhide.noarch.rpm"
-    checksum: "8895fa67175b85c44777208e2ab6685cbc9764c5bb6d5e09555239523c8b25c4"
+    dest: "/var/cache/ansible/f19c6c7764a1c61f9de7ce43dbbe00ef177dbeb0295130a7c87f82d8baac1bce/rpmfusion-free-release-rawhide.noarch.rpm"
+    checksum: "f19c6c7764a1c61f9de7ce43dbbe00ef177dbeb0295130a7c87f82d8baac1bce"
   - url: "http://rpmfind.net/linux/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-rawhide.noarch.rpm"
-    dest: "/var/cache/ansible/e20559a5ff4394223c7d799cc8f926bcb14930f5156428a6371946c58e21e368/rpmfusion-nonfree-release-rawhide.noarch.rpm"
-    checksum: "e20559a5ff4394223c7d799cc8f926bcb14930f5156428a6371946c58e21e368"
+    dest: "/var/cache/ansible/8e7aefdf94a1b79bd6e38da5e409d5b1d1839cc617e1792cdf3fb2abe5e94bc2/rpmfusion-nonfree-release-rawhide.noarch.rpm"
+    checksum: "8e7aefdf94a1b79bd6e38da5e409d5b1d1839cc617e1792cdf3fb2abe5e94bc2"
 
 _yum:
   - { state: "latest", name: "handbrake" }
