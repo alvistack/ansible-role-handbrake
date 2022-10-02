@@ -20,6 +20,7 @@
   become: true
   tasks:
     - name: handbrake --help
-      ansible.builtin.command: handbrake --help
+      ansible.builtin.command:
+        cmd: handbrake --help
       register: result
       changed_when: result is not succeeded
