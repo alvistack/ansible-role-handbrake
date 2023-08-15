@@ -13,23 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-_rpm_key:
-  - key: "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xE9A491A3DE247814E7E067EAE06F8ECDD651FF2E"
-    fingerprint: "E9A491A3DE247814E7E067EAE06F8ECDD651FF2E"
-    state: "present"
-  - key: "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x79BDB88F9BBF73910FD4095B6A2AF96194843C65"
-    fingerprint: "79BDB88F9BBF73910FD4095B6A2AF96194843C65"
-    state: "present"
-
-_rpm_download:
-  - url: "http://rpmfind.net/linux/rpmfusion/free/fedora/rpmfusion-free-release-37.noarch.rpm"
-    dest: "/var/cache/ansible/b484f9c5c7799cc8a632d1e5f218c649105809c2dac8c40e2b39bb505cf2c602/rpmfusion-free-release-37.noarch.rpm"
-    checksum: "b484f9c5c7799cc8a632d1e5f218c649105809c2dac8c40e2b39bb505cf2c602"
-  - url: "http://rpmfind.net/linux/rpmfusion/nonfree/fedora/rpmfusion-nonfree-release-37.noarch.rpm"
-    dest: "/var/cache/ansible/80b251b958e1ed01e3281ede8ed6bd7e9a7e26ddd3b1e0c4ca66558064a78bf3/rpmfusion-nonfree-release-37.noarch.rpm"
-    checksum: "80b251b958e1ed01e3281ede8ed6bd7e9a7e26ddd3b1e0c4ca66558064a78bf3"
-
-_yum:
-  - { state: "latest", name: "handbrake" }
-  - { state: "latest", name: "handbrake-gui" }
