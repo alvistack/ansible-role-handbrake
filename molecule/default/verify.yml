@@ -19,8 +19,8 @@
   remote_user: root
   become: true
   tasks:
-    - name: handbrake --help
+    - name: flatpak info fr.handbrake.ghb
       ansible.builtin.command:
-        cmd: handbrake --help
+        cmd: flatpak info fr.handbrake.ghb
       register: result
       changed_when: result is not succeeded

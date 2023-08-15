@@ -13,23 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-_apt_key:
-  - keyring: "/etc/apt/trusted.gpg.d/savoury1.gpg"
-    url: "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xE996735927E427A733BB653E374C7797FB006459"
-    id: "E996735927E427A733BB653E374C7797FB006459"
-    state: "present"
-
-_apt_repository:
-  - filename: "savoury1"
-    repo: "deb http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu focal main"
-    state: "present"
-  - filename: "savoury1"
-    repo: "deb http://ppa.launchpad.net/savoury1/ffmpeg5/ubuntu focal main"
-    state: "present"
-  - filename: "savoury1"
-    repo: "deb http://ppa.launchpad.net/savoury1/handbrake/ubuntu focal main"
-    state: "present"
-
-_apt:
-  - { state: "latest", name: "handbrake" }
