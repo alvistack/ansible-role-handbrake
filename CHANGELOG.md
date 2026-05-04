@@ -1,4 +1,4 @@
-# Ansible Role for HandBrake
+# Ansible Role for HandBrake with Flatpak
 
 ## 13.6.0 - TBC
 

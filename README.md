@@ -1,13 +1,13 @@
-# Ansible Role for HandBrake
+# Ansible Role for HandBrake with Flatpak
 
 <a href="https://alvistack.com" title="AlviStack" target="_blank"><img src="/alvistack.svg" height="75" alt="AlviStack"></a>
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-handbrake/master)](https://gitlab.com/alvistack/ansible-role-handbrake/-/pipelines)
-[![GitHub tag](https://img.shields.io/github/tag/alvistack/ansible-role-handbrake.svg)](https://github.com/alvistack/ansible-role-handbrake/tags)
-[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-handbrake.svg)](https://github.com/alvistack/ansible-role-handbrake/blob/master/LICENSE)
-[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.handbrake-blue.svg)](https://galaxy.ansible.com/alvistack/handbrake)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-flatpak_handbrake/master)](https://gitlab.com/alvistack/ansible-role-flatpak_handbrake/-/pipelines)
+[![GitHub tag](https://img.shields.io/github/tag/alvistack/ansible-role-flatpak_handbrake.svg)](https://github.com/alvistack/ansible-role-flatpak_handbrake/tags)
+[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-flatpak_handbrake.svg)](https://github.com/alvistack/ansible-role-flatpak_handbrake/blob/master/LICENSE)
+[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.flatpak_handbrake-blue.svg)](https://galaxy.ansible.com/alvistack/flatpak_handbrake)
 
-Ansible Role for HandBrake Installation.
+Ansible Role for HandBrake with Flatpak.
 
 ## Requirements
 
